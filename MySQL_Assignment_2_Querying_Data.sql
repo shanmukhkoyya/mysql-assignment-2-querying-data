@@ -1,6 +1,8 @@
 -- WARNING: This practice script drops and recreates the `employee` database.
 -- Run it only in a disposable learning environment. It is not a production migration.
+-- Remove any prior practice database so the script can be rerun from a clean state.
 
+DROP DATABASE IF EXISTS employee;
 CREATE DATABASE employee;
 USE employee;
 CREATE TABLE Departments (

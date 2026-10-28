@@ -1,48 +1,35 @@
-# MySQL Assignment – Querying Data
+# MySQL Assignment — Querying Data
 
-![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQL](https://img.shields.io/badge/Language-SQL-336791?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-2EA44F?style=for-the-badge)
+This project practices querying a relational employee database with MySQL. It covers filtering, sorting, aggregation, grouping, updates, and joins.
 
-## 📌 Project Overview
+## Main file
 
-This project demonstrates practical SQL querying techniques using MySQL.
+[**MySQL_Assignment_2_Querying_Data.sql**](MySQL_Assignment_2_Querying_Data.sql)
 
-It continues the database and table design completed in the previous
-**MySQL DDL Commands & Constraints** assignment and focuses on querying,
-filtering, sorting, grouping, aggregating, updating, and joining relational data.
+The script includes database/table setup, DDL demonstrations, a small sample dataset, and query exercises using the `employee`, `Departments`, `Location`, and `Employees` tables.
 
-The project uses an employee database containing three related tables:
+## SQL concepts covered
 
-- `employees`
-- `departments`
-- `location`
+- `DISTINCT` and column aliases
+- `WHERE`, comparison operators, `AND`, and `IS NULL`
+- `UPDATE`, `ORDER BY`, and `LIMIT`
+- Aggregate functions: `SUM`, `MIN`, `MAX`, and `AVG`
+- `GROUP BY` and `HAVING`
+- `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`
 
-The queries were executed and tested using **MySQL Workbench**.
+## Run the assignment
 
----
+1. Open the SQL file in MySQL Workbench or another compatible MySQL client.
+2. Read the warning at the top of the script before running it.
+3. Execute the script in a disposable practice environment.
+4. Run the final query section and inspect the returned rows.
 
-## 🎯 Project Objectives
+## Important safety note
 
-The main objectives of this assignment are to:
+**This is a destructive practice script.** It contains commands that drop and recreate the `employee` database and clear tables. Do not run it against a production database or any database containing important data.
 
-- Retrieve unique values using `DISTINCT`
-- Rename columns using aliases with `AS`
-- Filter records using `WHERE`
-- Apply comparison and logical operators
-- Update missing data
-- Sort records using `ORDER BY`
-- Limit query results using `LIMIT`
-- Perform calculations using aggregate functions
-- Group records using `GROUP BY`
-- Filter grouped results using `HAVING`
-- Combine related tables using SQL joins
+The included records are synthetic sample data for learning. They do not describe a real company's employees.
 
----
+## Author
 
-## 🗄️ Database Overview
-
-### Database Name
-
-```text
-employee
+**Shanmukh Koyya** · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/)

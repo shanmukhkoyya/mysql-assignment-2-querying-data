@@ -1,44 +1,32 @@
-# MySQL Query Workbook
+# 🔍 MYSQL QUERY PRACTICE — WORKBOOK
+**Assignment 02 · Ask the database better questions**
 
-**Exercise theme:** Querying a relational employee database  
-**Practice environment:** MySQL Workbench or another compatible MySQL client
-
-## Workbook contents
-
-| Query skill | Techniques practised |
+## Query skill matrix
+| Skill | SQL tools |
 |---|---|
-| Select and label | DISTINCT, column aliases |
-| Filter rows | WHERE, comparison operators, AND, IS NULL |
-| Modify data | UPDATE |
-| Order and limit | ORDER BY, LIMIT |
-| Summarise | SUM, MIN, MAX, AVG |
-| Group results | GROUP BY, HAVING |
-| Combine tables | INNER JOIN, LEFT JOIN, RIGHT JOIN |
+| Select | SELECT, DISTINCT, aliases |
+| Filter | WHERE, comparisons, AND, IS NULL |
+| Change | UPDATE |
+| Sort | ORDER BY, LIMIT |
+| Aggregate | SUM, MIN, MAX, AVG |
+| Group | GROUP BY, HAVING |
+| Relate | INNER / LEFT / RIGHT JOIN |
 
-## Main SQL file
+## Query journey
+<p align="center">🧾 SELECT → 🎯 FILTER → ↕️ SORT → 🧮 AGGREGATE → 🧩 JOIN → 📊 INTERPRET</p>
 
-**[MySQL_Assignment_2_Querying_Data.sql](MySQL_Assignment_2_Querying_Data.sql)**
+## Main workbook
+[![Open SQL script](https://img.shields.io/badge/OPEN_SQL_SCRIPT-4479A1?style=for-the-badge&logo=mysql)](MySQL_Assignment_2_Querying_Data.sql)
 
-The script includes database and table setup, DDL demonstrations, a small sample dataset, and query exercises using the employee, Departments, Location and Employees tables.
+The script contains database setup, sample employee data and query exercises using employee, department and location tables.
 
-## Suggested execution order
+> [!CAUTION]
+> The script drops and recreates the employee database and clears tables. Use a disposable practice database only. Existing data in the target database can be lost.
 
-1. Open the SQL file in MySQL Workbench.
-2. Read the warning at the top before running anything.
-3. Confirm that the connection is a disposable practice environment.
-4. Execute the script in order.
-5. Inspect the returned rows from the final query sections.
+## Suggested lab routine
+1. Read the entire script and identify destructive statements.
+2. Connect to a disposable MySQL instance.
+3. Run setup and query sections in order.
+4. Inspect returned rows and aggregates.
 
-## Safety first
-
-> **This script is destructive.** It drops and recreates the employee database and clears tables. Running it can remove existing data in that database. Do not use a production connection or a database containing important information.
-
-The included employee records are synthetic examples for learning and do not describe a real company's workforce.
-
-## Learning outcome
-
-This assignment provides practice with retrieving, filtering, grouping, updating and joining relational data. The examples are intended to build SQL fluency before applying the same techniques to a larger analytical dataset.
-
----
-
-**Shanmukh Koyya** · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/)
+Synthetic employee records are used for learning. This assignment practises relational querying, not real workforce analysis.
